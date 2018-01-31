@@ -21,7 +21,7 @@ module.exports = (router) => {
         if (!authorized_user) {
             res.json({ success: false, message: 'User not found under given email address. Cannot Push Button.' })
         } else {
-
+            res.json({ success: true, message: 'Button Pushed.' })
         }
     });
 
